@@ -3,6 +3,7 @@ import util.Announcer;
 import util.InjectByType;
 import util.Policeman;
 
+@Deprecated
 public class CoronaDesinfector {
 
 // 7+ responsebility

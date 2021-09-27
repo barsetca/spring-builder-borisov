@@ -7,11 +7,11 @@ import org.reflections.Reflections;
 
 public class JavaConfig implements Config {
 
-  @Getter
+  @Getter // эта @ по сути делает @Override метода интерфейса Reflections getScanner();
   private Reflections scanner;
   private Map<Class, Class> ifc2ImplClass;
 
-  public JavaConfig(String packageToScan,Map<Class, Class> ifc2ImplClass ) {
+  public JavaConfig(String packageToScan, Map<Class, Class> ifc2ImplClass ) {
     this.scanner = new Reflections(packageToScan);
     this.ifc2ImplClass = ifc2ImplClass;
   }

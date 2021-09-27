@@ -2,5 +2,5 @@ package util;
 
 public interface Announcer {
 
-  public void announce(String message);
+  void announce(String message);
 }
